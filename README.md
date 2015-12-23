@@ -2,9 +2,12 @@
 This contains the personalized recommendation systems code based on Yelp data. 
 
 Author: 
-- Qianbo Wang  qw2180    
-- Yi Wu  yw2682    
-- Zuyi Wu  zw2289    
+- Qianbo Wang    
+uni: qw2180    
+- Yi Wu    
+uni: yw2682    
+- Zuyi Wu      
+uni: zw2289    
 
 _____________________
 
