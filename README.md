@@ -1,4 +1,5 @@
-# Yelp_Recommendation    
+# Yelp_Recommendation  
+_____________________
 This contains the personalized recommendation systems code based on Yelp data. 
 
 Author: 
@@ -17,11 +18,13 @@ We download the data from Yelp Challenge Data Set: [https://www.yelp.com/dataset
 - Yelp_data.py contains the class of Yelp data file, with static methods of retrieving the specific features and information    
 - Yelp_save.py contains the methods for save and reload the data files    
 
+_____________________
 ## Recommend Algorithm    
 - Yelp_recommender.py contains the class of recommendation with methods of main mix collaborative filtering algorithm    
 - Yelp_main.py is the main code for building recommendation system    
 - Yelp_review.py contains the review analysis for Yelp data and get user scores from past reviews    
 
+_____________________
 ## Specific City Recommendation    
 - Yelp_Edinburgh.py contains the data processing and making recommendations for Edinburgh users    
 - Yelp_Pittsburgh.py contains the data processing and making recommendations for Pittsburgh users    
