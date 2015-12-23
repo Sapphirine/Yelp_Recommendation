@@ -23,6 +23,6 @@ _____________________
 
 ## Specific City Recommendation    
 - Yelp_Edinburgh.py contains the data processing and making recommendations for Edinburgh users    
-- Yelp_Pittsburgh.py contains the data processing and making recommendations for Edinburgh users    
-- Yelp_Madison.py contains the data processing and making recommendations for Edinburgh users    
+- Yelp_Pittsburgh.py contains the data processing and making recommendations for Pittsburgh users    
+- Yelp_Madison.py contains the data processing and making recommendations for Madison users    
 
