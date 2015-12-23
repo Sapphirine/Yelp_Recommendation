@@ -22,7 +22,7 @@ _____________________
 ## Recommend Algorithm    
 - Yelp_recommender.py contains the class of recommendation with methods of main mix collaborative filtering algorithm    
 - Yelp_main.py is the main code for building recommendation system    
-- Yelp_review.py contains the review analysis for Yelp data and get user scores from past reviews    
+- Review_functions.py, Review_main, and tfidf contain the review analysis for Yelp data and get user scores from past reviews    
 
 _____________________
 ## Specific City Recommendation    
@@ -30,3 +30,12 @@ _____________________
 - Yelp_Pittsburgh.py contains the data processing and making recommendations for Pittsburgh users    
 - Yelp_Madison.py contains the data processing and making recommendations for Madison users    
 
+______________________
+# Description for running code
+
+1. First, download the data from the [Yelp data set](https://www.yelp.com/dataset_challenge/dataset).    
+2. Second, run Yelp_get.py to parse the data.
+3. Third, run Yelp_save.py to save the data into another json,pickle and csv files
+4. Fourth, run Yelp_Madison.py, Yelp_Pittsburgh.py and run Yelp_Edinburgh.py to get restaurants and users and also their past ratings for these specific cities.
+5. Finally, run Yelp_main.py, and combine the scores given by mix collaborative filtering algorithm and review analysis to calculate the final score for users and make recommendations for users.
+6. Then use iOS projects (objective-c) code to build the application.
