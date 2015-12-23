@@ -12,6 +12,7 @@ uni: zw2289
 _____________________
 
 ## Data Processing    
+We download the data from Yelp Challenge Data Set: [https://www.yelp.com/dataset_challenge/dataset](https://www.yelp.com/dataset_challenge/dataset)
 - Yelp_get.py contains the class of get and parse data from json file and static methods within the Yelp_get class    
 - Yelp_data.py contains the class of Yelp data file, with static methods of retrieving the specific features and information    
 - Yelp_save.py contains the methods for save and reload the data files    
