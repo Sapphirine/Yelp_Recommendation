@@ -171,7 +171,7 @@ class Yelp_recommender(object):
 		user_num = numpy.shape(estimating_rating_matrix)[0]
 		recommend_matrix = []
 		for num in range(user_num):
-			indices = numpy.argsort(estimating_rating_matrix[num,])[0:200]
+			indices = numpy.argsort(estimating_rating_matrix[num,])[::-1][0:200]
 			recommend_matrix.append(indices.tolist())
 			#numpy.array(recommend_matrix,dtype=int)
 		return recommend_matrix
@@ -222,7 +222,7 @@ class Yelp_recommender(object):
 	@staticmethod
 	def get_new_recommend_restaurant(new_rating_list,restaurant_list):
 		new_rating_list = numpy.array(new_rating_list)
-		index = numpy.argsort(new_rating_list)
+		index = numpy.argsort(new_rating_list)[::-1]
 		restaurant_index = index.tolist()
 		new_list = [restaurant_list[num] for num in restaurant_index] 
 		return new_list

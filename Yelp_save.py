@@ -30,14 +30,23 @@ def Yelp_reload_dict(dict_path):
 
 def Yelp_save_csv(csv_path,file_name):
 	with open(csv_path,"wb") as file:
-		writer = writer=csv.writer(file)
+		writer = csv.writer(file)
 		for item in file_name:
 			if (type(item) is list):
 				writer.writerows([item])
 			else:
 				writer.writerow([item])
 	file.close()
-
+def Yelp_reload_csv(csv_path):
+	csv_file = []
+	with open(csv_path,"rb") as file:
+		reader = csv.reader(file)
+		for row in reader:
+			if len(row)>1:
+				csv_file.append(row)
+			else:
+				csv_file.append(row[0])
+	return csv_file
 
 if __name__ == "__main__":
 	user_path = "yelp_academic_dataset_user.json"				
