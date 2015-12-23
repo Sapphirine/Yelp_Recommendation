@@ -1,4 +1,4 @@
-# Yelp_Recommendtion    
+# Yelp_Recommendation    
 This contains the personalized recommendation systems code based on Yelp data. 
 
 Author: 
