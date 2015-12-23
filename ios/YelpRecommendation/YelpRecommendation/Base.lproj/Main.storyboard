@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vfU-Pr-WGP"/>
+                        <viewControllerLayoutGuide type="bottom" id="vwv-dy-U8U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Yelp Recommendation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71l-cI-DyR">
+                                <rect key="frame" x="20" y="119" width="280" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Personalized for Your Own Taste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U62-1h-5Yc">
+                                <rect key="frame" x="20" y="161" width="280" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyZ-VH-RyQ">
+                                <rect key="frame" x="-5" y="426" width="320" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="New User"/>
+                                <connections>
+                                    <segue destination="R8M-vs-UHc" kind="modal" identifier="new1" id="6NZ-xG-xTk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgG-lE-0xj">
+                                <rect key="frame" x="0.0" y="319" width="320" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="2rQ-0O-GfZ" kind="modal" identifier="old1" id="hz6-r8-BYV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Six Characters of User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycn-2B-5rb">
+                                <rect key="frame" x="52" y="243" width="217" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Cv-La-bZo">
+                                <rect key="frame" x="52" y="281" width="217" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="71l-cI-DyR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FlH-v7-2Ju"/>
+                            <constraint firstItem="RgG-lE-0xj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XJo-RZ-XbD"/>
+                            <constraint firstItem="QyZ-VH-RyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pT6-yj-5q9"/>
+                            <constraint firstItem="ycn-2B-5rb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u5u-CL-WeG"/>
+                            <constraint firstItem="U62-1h-5Yc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uFE-0P-W61"/>
+                            <constraint firstItem="4Cv-La-bZo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zI3-56-SfZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userIDfield" destination="ycn-2B-5rb" id="ZDs-jB-WFG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="639"/>
+        </scene>
+        <!--Filter-->
+        <scene sceneID="px3-xT-b3L">
+            <objects>
+                <viewController id="R8M-vs-UHc" customClass="NewUserFilterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gTv-Eg-jgX"/>
+                        <viewControllerLayoutGuide type="bottom" id="pSO-FR-Qf5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MOe-ej-u0o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfW-cQ-oKh">
+                                <rect key="frame" x="20" y="540" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="Ryv-Kl-frB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QR-qp-g6w">
+                                <rect key="frame" x="20" y="440" width="280" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Recommend"/>
+                                <connections>
+                                    <segue destination="NJt-EL-c33" kind="modal" identifier="new2" id="Lhn-DA-348"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please choose a city:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdU-Ys-m80">
+                                <rect key="frame" x="20" y="230" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AdP-DR-kew">
+                                <rect key="frame" x="47" y="237" width="226" height="146"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="R8M-vs-UHc" id="fab-Pa-fvC"/>
+                                    <outlet property="delegate" destination="R8M-vs-UHc" id="B7k-rb-yMz"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apr-Ms-K3M">
+                                <rect key="frame" x="47" y="121" width="226" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2D-Lk-T5y">
+                                <rect key="frame" x="47" y="159" width="226" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome, please type in your info:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-Vp-d9V">
+                                <rect key="frame" x="7" y="52" width="307" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KdU-Ys-m80" firstAttribute="centerX" secondItem="MOe-ej-u0o" secondAttribute="centerX" id="4LU-Hp-JK0"/>
+                            <constraint firstItem="IfW-cQ-oKh" firstAttribute="centerX" secondItem="MOe-ej-u0o" secondAttribute="centerX" id="4Xy-f0-YGg"/>
+                            <constraint firstItem="7QR-qp-g6w" firstAttribute="centerX" secondItem="MOe-ej-u0o" secondAttribute="centerX" id="4tg-bf-bbK"/>
+                            <constraint firstItem="b2D-Lk-T5y" firstAttribute="centerX" secondItem="MOe-ej-u0o" secondAttribute="centerX" id="5iM-c3-xs7"/>
+                            <constraint firstItem="AdP-DR-kew" firstAttribute="centerX" secondItem="MOe-ej-u0o" secondAttribute="centerX" id="NbN-hs-IpG"/>
+                            <constraint firstItem="Ddg-Vp-d9V" firstAttribute="centerX" secondItem="MOe-ej-u0o" secondAttribute="centerX" id="Sco-9I-2ng"/>
+                            <constraint firstItem="IfW-cQ-oKh" firstAttribute="centerX" secondItem="MOe-ej-u0o" secondAttribute="centerX" id="cpJ-KA-ptT"/>
+                            <constraint firstItem="apr-Ms-K3M" firstAttribute="centerX" secondItem="MOe-ej-u0o" secondAttribute="centerX" id="vx0-8X-908"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filter" id="ohm-5h-Gx9"/>
+                    <connections>
+                        <outlet property="cityfilter" destination="AdP-DR-kew" id="Dkl-yh-8Q1"/>
+                    </connections>
+                </viewController>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose a city:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yie-0S-wHw">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wsu-Pi-aZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="963"/>
+        </scene>
+        <!--Recommendation List-->
+        <scene sceneID="swX-xf-N3v">
+            <objects>
+                <viewController id="NJt-EL-c33" customClass="NewUserListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h8H-af-Jwu"/>
+                        <viewControllerLayoutGuide type="bottom" id="XjK-EJ-Kum"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ub1-1L-nj2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tvk-mj-rtD">
+                                <rect key="frame" x="0.0" y="64" width="370" height="469"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="NJt-EL-c33" id="qSF-xI-ive"/>
+                                    <outlet property="delegate" destination="NJt-EL-c33" id="PBO-G8-er5"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFb-eT-KVQ">
+                                <rect key="frame" x="20" y="540" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="dFY-De-GqP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Recommendation List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltl-Mh-TLy">
+                                <rect key="frame" x="20" y="20" width="280" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ltl-Mh-TLy" firstAttribute="centerX" secondItem="Ub1-1L-nj2" secondAttribute="centerX" id="5Kt-8V-oGs"/>
+                            <constraint firstItem="UFb-eT-KVQ" firstAttribute="centerX" secondItem="Ub1-1L-nj2" secondAttribute="centerX" id="lRW-9v-k4F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recommendation List" id="0Ot-ci-NkM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gq3-K3-ont" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="963"/>
+        </scene>
+        <!--Filter-->
+        <scene sceneID="xB4-xU-nR6">
+            <objects>
+                <viewController id="2rQ-0O-GfZ" customClass="OldUserFilterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cG5-X8-IrQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OvG-ea-jLK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C8g-D3-ONw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uws-1s-osA">
+                                <rect key="frame" x="20" y="540" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="oaM-br-2nF"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70I-bs-rxY">
+                                <rect key="frame" x="47" y="170" width="226" height="146"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2rQ-0O-GfZ" id="dRg-J3-k2X"/>
+                                    <outlet property="delegate" destination="2rQ-0O-GfZ" id="SI4-Cx-O9C"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please choose a city:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chi-zw-XOg">
+                                <rect key="frame" x="20" y="164" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkP-Pe-DlN">
+                                <rect key="frame" x="0.0" y="112" width="320" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XV-Ro-RUl">
+                                <rect key="frame" x="20" y="400" width="280" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Recommend"/>
+                                <connections>
+                                    <action selector="getList:" destination="2rQ-0O-GfZ" eventType="touchUpInside" id="fbH-hR-N35"/>
+                                    <segue destination="WYG-qP-wjB" kind="modal" identifier="old2" id="gEB-cJ-RxP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Chi-zw-XOg" firstAttribute="centerX" secondItem="C8g-D3-ONw" secondAttribute="centerX" id="4sg-yH-1av"/>
+                            <constraint firstItem="5XV-Ro-RUl" firstAttribute="centerX" secondItem="C8g-D3-ONw" secondAttribute="centerX" id="76x-Zw-hs9"/>
+                            <constraint firstItem="dkP-Pe-DlN" firstAttribute="centerX" secondItem="C8g-D3-ONw" secondAttribute="centerX" id="Pyj-IW-sPd"/>
+                            <constraint firstItem="uws-1s-osA" firstAttribute="centerX" secondItem="C8g-D3-ONw" secondAttribute="centerX" id="QMy-JG-iGd"/>
+                            <constraint firstItem="70I-bs-rxY" firstAttribute="centerX" secondItem="C8g-D3-ONw" secondAttribute="centerX" id="aOX-cm-L3D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filter" id="fNZ-SI-gXe"/>
+                    <connections>
+                        <outlet property="cityfilter" destination="70I-bs-rxY" id="htU-Nc-fo7"/>
+                        <outlet property="label" destination="dkP-Pe-DlN" id="YlN-1j-fND"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q17-6E-BCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="339"/>
+        </scene>
+        <!--Recommendation List-->
+        <scene sceneID="Mxd-yo-HQr">
+            <objects>
+                <viewController id="WYG-qP-wjB" customClass="OldUserListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gC2-7x-PMA"/>
+                        <viewControllerLayoutGuide type="bottom" id="vDV-mq-Cvu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gd8-2Y-zed">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x6f-eW-iRD">
+                                <rect key="frame" x="0.0" y="64" width="370" height="469"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WYG-qP-wjB" id="RPS-2A-PAe"/>
+                                    <outlet property="delegate" destination="WYG-qP-wjB" id="xV3-6O-FUu"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Recommendation List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0un-o3-tyZ">
+                                <rect key="frame" x="20" y="20" width="280" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61a-Hh-hRj">
+                                <rect key="frame" x="20" y="540" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="YVv-2i-J4I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="61a-Hh-hRj" firstAttribute="centerX" secondItem="Gd8-2Y-zed" secondAttribute="centerX" id="9Up-yp-0RU"/>
+                            <constraint firstItem="0un-o3-tyZ" firstAttribute="centerX" secondItem="Gd8-2Y-zed" secondAttribute="centerX" id="KtK-Ee-NbX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recommendation List" id="XDi-v1-aw6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMG-yr-20U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="339"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YVv-2i-J4I"/>
+    </inferredMetricsTieBreakers>
+</document>
